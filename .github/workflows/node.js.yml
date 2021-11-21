@@ -39,5 +39,9 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: Delopy on github pages
-        run: npm run deploy
+      - uses: actions/checkout@v2
+      - uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: build
+          
