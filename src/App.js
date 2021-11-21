@@ -9,6 +9,7 @@ function App() {
         <p>
           It has been built and deployed with Github Action
         </p>
+        <p>Test two workflows</p>
         <a
           className="App-link"
           href="https://reactjs.org"
